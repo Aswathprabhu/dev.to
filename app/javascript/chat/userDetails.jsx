@@ -123,6 +123,7 @@ export default class UserDetails extends Component {
         </div>
         <div className="userdetails__blockreport">
           {blockButton}
+<<<<<<< HEAD
           {
             setUpButton({
               modalId: 'userdetails__reportabuse',
@@ -130,6 +131,13 @@ export default class UserDetails extends Component {
               btnName: 'Report Abuse'
             })
           }
+=======
+          {setUpButton({
+            modalId: 'userdetails__reportabuse',
+            otherModalId: 'userdetails__reportabuseuserdetails__blockmsg',
+            btnName: 'Report Abuse'
+          })}
+>>>>>>> Refactoring userDetails.jsx removes button code duplication
         </div>
         <div id="userdetails__reportabuse" style="display:none">
           <div className="userdetails__reportabuse">
