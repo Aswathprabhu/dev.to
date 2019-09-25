@@ -123,11 +123,13 @@ export default class UserDetails extends Component {
         </div>
         <div className="userdetails__blockreport">
           {blockButton}
-          {setUpButton({
-            modalId: 'userdetails__reportabuse',
-            otherModalId: 'userdetails__reportabuseuserdetails__blockmsg',
-            btnName: 'Report Abuse'
-          })}
+          {
+            setUpButton({
+              modalId: 'userdetails__reportabuse',
+              otherModalId: 'userdetails__blockmsg',
+              btnName: 'Report Abuse'
+            })
+          }
         </div>
         <div id="userdetails__reportabuse" style="display:none">
           <div className="userdetails__reportabuse">
